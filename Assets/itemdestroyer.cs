@@ -8,14 +8,15 @@ public class itemdestroyer: MonoBehaviour {
     public GameObject coneprefab;
     private GameObject unitychan;
     void Start () {
-        unitychan = GameObject.Find("unitychan");
-        if (gameObject.transform.position.z + 30 < unitychan.transform.position.z)
-        { Destroy(gameObject); }
+        
 		
 	}
 	
 
 	void Update () {
-		
-	}
+        unitychan = GameObject.Find("unitychan");
+        if (gameObject.transform.position.z + 10 < unitychan.transform.position.z)
+        { Destroy(gameObject); }
+
+    }
 }
